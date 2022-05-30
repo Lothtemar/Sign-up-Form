@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container left-side">
+        <div class="image">
+            <p class="title shadow-label">Sta. María Forum</p>
+        </div>
+    </div>
+    <main class="right-side">
+        <p class="shadow-label">Space to share our thougths and improve our community</p>
+        <form>
+            <div class="form-card">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="firstname" placeholder="Jhon">
+                <label for="last_name">Last name</label>
+                <input type="text" id="last_name" name="lastname" placeholder="Doe">
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="email" placeholder="jhon.doe@email.com"> 
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="phone_number" name="phonenumber" placeholder="978-326-534" >
+                <label for="usr_password">Password</label>
+                <input type="password" id="usr_password" name="password">
+                <label for="cnf_password">Confirm Password</label>
+                <input type="password" id="cnf_password" name="cnfpassword">
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a>Log in</a></p>
+    </main>
+</body>
+</html>

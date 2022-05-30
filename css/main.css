@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    color: green;
+}
+/* Mobile */
+@media (max-width: 425px){
+    body{
+        min-width: 249px;
+        background-image: url("../img/front-small.jpg");
+        background-size: auto;
+        background-repeat:no-repeat;
+        background-color: #c7b09c;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        height: 98vh;
+    }
+    .container{
+        width: 100%;
+    }
+    body * {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 1vh;
+        font-size: 1.15rem;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(83, 72, 72, 0.616);
+    }
+    .title{
+        font-size: 2.3rem;
+        margin-bottom: 3vh;
+    }
+    .shadow-label{
+        background-color: rgba(199, 199, 199, 0.616);
+        width: 98%;
+    }
+    form button {
+        margin-top: 1rem;
+        background-color: #c7b09c;
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
+        width: 200px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    input {
+        text-align: center;
+        background-color: #f1dcca;
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        color: rgb(65, 65, 65);
+    }
+}
+    
+/* Tablet & Laptop */
+@media (min-width: 426px) and (max-width: 1023px){
+    * {
+        color: green;
+    }
+}
+/* Pc */
+@media (min-width: 1024px){
+    * {
+        color: blue;
+    }
+}
