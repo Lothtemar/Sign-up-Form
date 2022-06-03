@@ -107,6 +107,7 @@ body{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        opacity: 1;
     }
     .right-side{
         width: 70%;
@@ -181,7 +182,106 @@ body{
 
     /* Pc */
 @media (min-width: 1024px){
-    * {
-        color: blue;
+    *{
+        color: white;
+        text-shadow: 1px 1px 2px rgba(83, 72, 72, 0.616);
+        text-align: center;
     }
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .left-side{
+        width: 40%;
+        height: 98vh;
+        background-image: url(../img/pant-side.jpg);
+        background-color: #c7b09c;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.8;
+      }
+      .title{
+        font-size: 2.3rem;
+        background-color: rgba(199, 199, 199, 0.616);
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
+        border-radius: 15px 0px 0px 0px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+    .right-side{
+        width: 60%;
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfd7cb;
+        font-size: 1.3rem;
+    }
+    .right-side > p{
+        background-color: rgba(199, 199, 199, 0.616);
+        width: 98%;
+        padding: 1rem 0 1rem 0;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
+        border-radius: 5px;
+    }
+    form{
+        padding-top: 3vh;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        background-color: #ccc3b7;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        
+    }
+    .form-card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+        background-color: #ccc3b7;;
+        
+    }
+    input {
+        text-align: center;
+        background-color: #d6d2cd;
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        color: rgb(65, 65, 65);
+        height: 1.8rem;
+    }
+    form button {
+        margin-top: 1rem;
+        background-color: rgba(199, 199, 199, 0.616);
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
+        width: 200px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 1.2rem;
+    }
+    button:hover {
+        transform: scale(1.05);
+}
 }
